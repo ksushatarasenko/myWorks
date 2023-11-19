@@ -1,0 +1,112 @@
+// ----------------- 4 OUR LATEST JEWELRY ------------------
+.modul4-our-latest{
+    // margin: 1% 5% ;
+    max-width: 100%;
+    height: auto;
+
+    &__title{
+        @include title();
+        @include indent-from-text-title; 
+        margin: 10% 0;
+    }
+    &__images {
+        img {
+            width: 100%
+        }
+    }
+    &__button{
+        @include flexible();
+    }
+    button{
+        @include blue_button();
+    }
+    }
+
+// -------------------- 4 5 6  images--------------------
+.modul6-our-servis__images,
+.modul4-our-latest__images, 
+.modul5-customer__card {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        gap: 40px; 
+        justify-items: stretch;
+        @include big-screen {
+            grid-template-columns: 420px;
+            grid-template-rows: repeat(3, 420px);
+            margin: 0 auto;
+            justify-content: center; 
+            align-items: center; 
+        } 
+        @include small-screen {
+            grid-template-columns: 280px;
+            grid-template-rows: repeat(3, 280px);
+        }
+}
+// --------------- 5 CUSTOMER REVIEWS --------------------
+.modul5-customer {
+    &__title {
+        // margin: $margin-left;
+        @include title();
+        @include  indent-from-text-title;
+        @include big-screen{
+            // text-align: center;
+            margin-top: 10%;
+        }
+    }
+    &__card {
+        img{
+           width: 100%; 
+        }
+        @include large {
+            gap: 20px;
+           
+        }
+        @include big-screen {
+            grid-template-columns: 420px;
+            grid-template-rows: repeat(3, 280px);
+        }
+        @include small-screen {
+            grid-template-columns: 320px;
+            grid-template-rows: repeat(3, 180px);
+        }
+        
+    }
+    
+}
+//  ----------- 6 OUR SERVICES --------------
+.modul6-our-servis {
+    
+   
+    &__title{
+        @include title();
+        @include  indent-from-text-title; 
+    }
+    &__images {
+        @include small-screen{
+        }
+        figure {
+            height: 100%;
+            width: 100%;
+            
+        }
+        figcaption {
+            text-align: center;
+            font-size: 24px;
+            @include indent-from-image;
+            margin-top: auto;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    &__button {
+        @include flexible();
+    }
+    button {
+        @include blue_button();  
+        @include big-screen {
+            margin: 10% 0;
+        }   
+             
+    }       
+}

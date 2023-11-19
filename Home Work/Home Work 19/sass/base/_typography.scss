@@ -1,0 +1,39 @@
+p{
+    color: $text-color;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: $nav-link;
+    font-weight: 500;
+    font-size: 18px;
+    &:hover{
+        opacity: 0.6;
+    }
+}
+
+ul{
+    display: flex;
+}
+ul li {
+    list-style-type: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#text-title{
+    
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    background:linear-gradient(to right,#AE67FA, #F49867);
+    -webkit-background-clip: text; 
+    -moz-background-clip: text; 
+    background-clip: text;
+    color: transparent;
+}

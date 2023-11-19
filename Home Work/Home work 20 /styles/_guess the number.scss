@@ -1,0 +1,82 @@
+
+body{
+    background-color: burlywood;
+}
+.guess-the-number {
+    font-family: 'Lugrasimo', cursive;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: coral;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 30px;
+    #home{
+        width: 100px;
+        height: 30px;
+        background-color: aquamarine;
+        margin-top: 50px;
+        font-size: 20px;
+        border-radius: 8px;
+        a{
+            text-decoration: none;
+        }
+    }
+    &__header {
+        margin: 5%;
+        h1 {
+            font-size: 54px;
+            margin: 20px 0;
+            @media (max-width:320px) {
+                font-size: 34px;
+            }
+        }
+        h2 {
+            font-size: 40px;
+            margin: 20px 0;
+            @media (max-width:320px) {
+                font-size: 30px;
+            }
+        }
+        p {
+            font-size: 28px;
+            margin: 20px 0;
+        }
+    }
+    &__play {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            input {
+            width: 200px;
+            height: 50px;
+            border-radius: 6px;
+            font-size: 18px;
+            text-align: center;
+            background-color: rgb(240, 240, 141);
+            margin-bottom: 10px;
+            }
+        }
+        
+
+        button {
+            width: 100px;
+            height: 40px;
+            border-radius: 6px;
+            background-color: rgb(162, 234, 177);
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            }
+    }
+    &__result {
+        font-size: 44px;
+        margin-bottom: 100px;
+    }
+    
+}

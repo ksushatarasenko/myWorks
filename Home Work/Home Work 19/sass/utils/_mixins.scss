@@ -1,0 +1,43 @@
+@mixin x-large{
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin big-screen{
+    @media (min-width:990px) and (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin medium-screen {
+    @media(max-width:989px) {
+        @content;
+    }
+}
+
+@mixin small-screen {
+    @media(max-width: 768px){
+        @content;
+    }
+}
+
+@mixin x-small {
+    @media (max-width: 575px){
+        @content;
+    }
+
+}
+
+
+@mixin text-title {
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 45px;
+    background: linear-gradient(to right, #AE67FA, #F49867);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}

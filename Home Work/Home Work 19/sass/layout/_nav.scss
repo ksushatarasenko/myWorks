@@ -1,0 +1,45 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    max-width: 1169px;
+    .nav-logo{
+        
+        @include medium-screen {
+            display: block;
+        }
+    }
+    .nav-burger {
+        display: none;
+        img {
+            margin-left: 20px;
+            filter: invert(100%); 
+        }
+        @include medium-screen {
+            display: block;
+        }
+
+    }
+    .nav-menu {
+        @include medium-screen {
+            display: none;
+        }
+    }
+    ul {
+        gap: 30px;
+        @include medium-screen {
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            left: 30px;
+            background-color: $blue-bg;
+            padding: 25px;
+            gap: 6px;
+        }
+    }
+
+}
+.show {
+    display: block !important;
+}

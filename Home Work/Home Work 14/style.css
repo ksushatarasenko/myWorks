@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(114, 149, 160);
+  min-height: 100vh; 
+}
+
+#zagolovok {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#cameraSelect,
+button {
+  margin-bottom: 10px;
+  height: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+#photosContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px; 
+  margin: 20px; 
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 5px;
+}
+
+#scrollButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  
+}
+
+#scrollButton:hover {
+  background-color: #0056b3;
+}
+#search{
+  font-size: 12px;
+  width: 150px;
+  height: 30px;
+  
+}
+
+@media screen and (max-width: 768px) {
+  #zagolovok {
+    font-size: 16px;
+  }
+
+  #cameraSelect,
+  button {
+    height: 20px;
+    font-size: 12px;
+  }
+
+  #photosContainer {
+    margin: 10px;
+  }
+
+  img {
+    margin: 2px;
+  }
+
+  #scrollButton {
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+}

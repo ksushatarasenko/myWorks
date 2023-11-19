@@ -1,0 +1,53 @@
+.cta-container {
+    background-image: linear-gradient(to right, #AE67FA, #F49867);
+    max-width: 1170px;
+    margin: $centr;
+    height: 172px;
+    border-radius: 10.7px;
+    margin-bottom: 154px;
+    @include x-small {
+        height: 100%;
+    }
+    .cta {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        @include small-screen {
+            grid-template-columns: 1fr;
+        }
+        p{
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 45px;
+            color: black;
+            text-align: center;
+            margin-top: 8%;
+            @include small-screen {
+                margin-top: 3%;
+            }
+
+        }
+        .btn {
+            color: white;
+            background-color: black;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 30px;
+            border-radius: 40px;
+            max-width: 189px;
+            max-height: 80px;
+            margin-top:  54px;
+            margin-left: 40%;
+           @include small-screen {
+            margin-top: 3%;
+           }
+           @include x-small {
+            margin-left: 25%;
+            margin-bottom: 5px;
+           }
+            
+            
+        }
+    }
+}

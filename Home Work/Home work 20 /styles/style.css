@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Lugrasimo&display=swap");
+#wraper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 40px;
+  background-color: burlywood;
+}
+@media (max-width: 1050px) {
+  #wraper {
+    flex-direction: column;
+    margin: 100px 0;
+    width: 100%;
+  }
+}
+#wraper .sound {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+@media (max-width: 1050px) {
+  #wraper .sound {
+    top: 2px;
+  }
+}
+#wraper .sound button {
+  background-color: burlywood;
+}
+#wraper img {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px 10px 0 0;
+}
+@media (max-width: 520px) {
+  #wraper img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (max-width: 280px) {
+  #wraper img {
+    width: 100%;
+    height: 200px;
+  }
+}
+#wraper .guess-the-number-home,
+#wraper .rock-scissors-paper-home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#wraper .guess-the-number-home span,
+#wraper .rock-scissors-paper-home span {
+  margin-bottom: 20px;
+}
+#wraper .guess-the-number-home button,
+#wraper .rock-scissors-paper-home button {
+  background-color: rgb(244, 244, 122);
+  border-radius: 0 0 10px 10px;
+  height: 40px;
+}
+#wraper .guess-the-number-home button a,
+#wraper .rock-scissors-paper-home button a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.guess-the-number {
+  font-family: "Lugrasimo", cursive;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: coral;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.guess-the-number #home {
+  width: 100px;
+  height: 30px;
+  background-color: aquamarine;
+  margin-top: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.guess-the-number #home a {
+  text-decoration: none;
+}
+.guess-the-number__header {
+  margin: 5%;
+}
+.guess-the-number__header h1 {
+  font-size: 54px;
+  margin: 20px 0;
+}
+@media (max-width: 320px) {
+  .guess-the-number__header h1 {
+    font-size: 34px;
+  }
+}
+.guess-the-number__header h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+@media (max-width: 320px) {
+  .guess-the-number__header h2 {
+    font-size: 30px;
+  }
+}
+.guess-the-number__header p {
+  font-size: 28px;
+  margin: 20px 0;
+}
+.guess-the-number__play {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.guess-the-number__play form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.guess-the-number__play form input {
+  width: 200px;
+  height: 50px;
+  border-radius: 6px;
+  font-size: 18px;
+  text-align: center;
+  background-color: rgb(240, 240, 141);
+  margin-bottom: 10px;
+}
+.guess-the-number__play button {
+  width: 100px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(162, 234, 177);
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.guess-the-number__result {
+  font-size: 44px;
+  margin-bottom: 100px;
+}
+
+body {
+  background-color: burlywood;
+}
+
+.play2 {
+  border: 1 px solid blueviolet;
+  font-family: "Lugrasimo", sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+  background-color: coral;
+  text-align: center;
+  width: 100%;
+}
+.play2 #home {
+  width: 100px;
+  height: 30px;
+  background-color: aquamarine;
+  margin-top: 50px;
+  font-size: 20px;
+  border-radius: 8px;
+}
+.play2 #home a {
+  text-decoration: none;
+}
+.play2 .stounes__header {
+  margin: 50px 0;
+}
+.play2 .stounes__header h1 {
+  font-size: 54px;
+}
+@media (max-width: 400px) {
+  .play2 .stounes__header h1 {
+    font-size: 30px;
+  }
+}
+.play2 .stounes__header p {
+  font-size: 40px;
+}
+@media (max-width: 400px) {
+  .play2 .stounes__header p {
+    font-size: 26px;
+  }
+}
+.play2 .stounes__play {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 400px) {
+  .play2 .stounes__play {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+.play2 .stounes__play button img {
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+@media (max-width: 780px) {
+  .play2 .stounes__play button img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (max-width: 400px) {
+  .play2 .stounes__play button img {
+    width: 150px;
+  }
+}
+.play2 .stounes__play button p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.play2 .stounes #resetStoune {
+  background-color: aquamarine;
+  font-size: 24px;
+  margin: 50px 0;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+}
+@media (max-width: 400px) {
+  .play2 .stounes #resetStoune {
+    font-size: 18px;
+    width: 150px;
+  }
+}
+.play2 .stounes .results h1 {
+  font-size: 30px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

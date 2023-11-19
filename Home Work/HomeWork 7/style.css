@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1200px 600px;
+}
+
+
+/*  HEADER */
+.header{
+    display: grid;
+    grid-template-columns: 450px 500px;
+    grid-template-rows: 100px;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo{
+    display: grid;
+    grid-template-columns: 100px 500px;
+    justify-content: center;
+    align-content: center;
+}
+.tabl{
+    display: grid;
+    grid-template-columns: 500px 200px;
+    justify-content: center;
+    align-content: center;
+}
+
+#call{
+    width: 173px;
+    height: 50px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+    font-size: 17px;
+    background-color: white;
+    color: #000000;
+    
+}
+
+
+
+
+/*  SECTION */
+section{
+    display: grid;
+    grid-template-rows: 250px 800px;
+    justify-content: center;
+    background-color: #e4e1e1;
+    position: relative;
+}
+
+.buhObsl{
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: 2, 300px;
+    row-gap: 15px;
+    align-content: center;
+    justify-content: center;
+}
+ .textSection{
+       width: 860px;
+       height: 250px;
+       display: grid;
+       align-content: center;
+       gap: 20px;
+ }
+
+ .textSection h3{
+    color: rgb(162, 162, 162); 
+    position: absolute;
+    top: 120px;
+
+ }
+
+ .textSection h1{
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-size: 40px;
+    position: absolute;
+    top: 170px;
+    color: #333333;
+ }
+
+.box {
+    position: relative;
+}
+
+.box h3{
+    position: absolute;
+    width: 187px;
+    height: 54px;
+    color: white;
+    font-family: 'lato';
+    font-style: normal;
+    font-size: 24px;
+    left:38px;
+    top: 32px;
+}
+.box button{
+    
+    position: absolute;
+    left: 40px;
+    bottom: 46px;
+    width: 170px;
+    height: 44px;
+    border-radius: 25px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: transparent;  
+    font-size: 12px;  
+    font-family: 'lato';
+    font-style: normal;
+}
+
+
+/* FOOTER */
+
+footer{
+    display: grid;
+    grid-template-columns: 600px 600px;
+    align-content: center;
+    justify-content: center; 
+    height: 800px;
+}
+
+.company{
+    justify-content: center; 
+    position: relative;
+}
+
+.company p{
+    width: 445px;
+    height: 245px;
+    font-size: 18px;
+    position: absolute;
+    left: 50px;
+    top: 200px;
+    line-height: 25px;   
+}
+.company h1{
+    position: absolute;
+    left: 40px;
+    top: 70px;
+    font-size: 40px;
+    
+}
+.company h4{
+    position: absolute;
+    left: 50px;
+    top: 5px;
+    color:  #BDBDBD;
+    font-size: 20px;
+}
+
+
+
+.itogblock{
+    display: grid;
+    grid-template-columns: 290px 290px;
+    grid-template-rows:  290px 290px;
+    justify-content: center; 
+    align-content: center;
+}
+
+.block1, .block1 button{
+    background-color: rgb(217, 214, 214);
+    
+}
+.block2, .block2 button{
+    background-color: #005FA3;
+    
+}
+
+.block2, .block1{
+    width: 255px;
+    height: 255px;
+    position: relative;
+    
+}
+
+.block1 h6, .block2 h6{
+    position: absolute;
+    font-size: 16px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    left: 50px;
+    top: 100px;
+}
+
+.block1 h1, .block2 h1{
+    position: absolute;
+    left: 45px;
+    top: 30px;
+    font-size: 55px;
+    font-weight: bold;
+    font-family: 'Lato';
+    
+}
+
+.block1 button, .block2 button{
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border: 2px solid  #005FA3;;
+    border-radius: 25px;
+    bottom: 20px;
+    left: 40px;
+}
+.block1 button{
+    color: #005FA3;
+}
+.block2 button{
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+}
+.block2 h1, .block2 h6{
+    color: #FFFFFF;
+}
+

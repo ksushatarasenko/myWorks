@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock,scissors,paper</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <section class="play2">
+        <button id="home"><a href="../index.html">HOME</a></button>
+        <div class="stounes">
+
+            <div class="stounes__header">
+                <h1>Камень, ножницы, бумага</h1>
+                <p>Сделайте свой выбор</p>
+                <p>нажмите на картинку</p>
+            </div>
+
+            <div class="stounes__play">
+                <div class="stoune">
+                    <button id="stoune"><img src="../images/камень.png" alt="stoune" width="200px"><p>КАМЕНЬ</p></button>               
+                </div>
+                <div class="scissors">
+                    <button id="scissors"><img src="../images/ножницы.png" alt="stoune" width="200px"><p>НОЖНИЦЫ</p></button>               
+                </div>
+                <div class="paper">
+                    <button id="paper"><img src="../images/бумага.png" alt="stoune" width="200px" ><p>БУМАГА</p></button>               
+                </div>
+            </div>
+
+            <button id="resetStoune">ПЕРЕИГРАТЬ</button>
+
+            <div class="results">
+                <h1 id="resultStoune"></h1>
+            </div>
+             
+            <div class="audio">
+                <audio id="vybor" src="../audio/zvonkiy-schelchok.mp3"></audio>
+                <audio id="error" src="../audio/opoveschenie-ob-oshibke.mp3"></audio>
+            </div>
+        </div>
+    </section>
+</section>
+
+<script src="./script.js"></script>
+</body>
+</html>

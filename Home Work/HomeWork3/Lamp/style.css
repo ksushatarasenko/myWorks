@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: italic;
+}
+.conteiner{
+    position: relative;
+    width: 1920px;
+    height: 1662px;
+    background:#FFFFFF;
+    display: flex;
+}
+
+.topLine{
+    width: 1296px;
+    height: 90px;
+    left: 312px;
+    top: 0;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    
+}
+#lamp{
+    width: 74px;
+    height: 74px;
+    box-sizing: border-box;
+    margin-left: 125px;
+    margin-top: 8px;
+    flex: none;
+    
+}
+
+.table{
+    position: absolute;
+    width: 1250px;
+    height: 29px;
+    margin-left: 100px;
+    margin-top: 30px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    
+   
+}
+
+#contact{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 1400px;
+    width: 194px;
+    height: 42px;  
+    font-size: 18px; 
+   
+
+}
+.icon{
+    width: 24px;
+    height: 24px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  
+}
+#vk{
+    margin-left: 626px;
+    
+}
+#youtube{
+    margin-left: 130px;
+}
+#facebook{
+    margin-left: 130px;
+}
+#instagram{
+    margin-left: 130px;
+}
+.block1{
+    position: relative;
+    width: 1923px;
+    height: 701px;
+    left: -3px;
+    top: 90px;
+    background: #4FBFA5;
+}
+.glavnay{
+    position: absolute;
+    width: 746px;
+    height: 533px;
+    left: 862px;
+    top: 115px;
+}
+h1{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    color: #FFFFFF;
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    margin-left: 150px;
+    top: 200px;
+
+}
+.paraGlav{
+    color: #FFFFFF;
+    width: 580px;
+    height: 84px;
+    margin-left: 150px;
+    margin-top: 320px;
+}
+#podrob{
+    position: absolute;
+    width: 158px;
+    height: 50px;
+    margin-left: 150px;
+    top: 549px;
+    font-size: 18px;
+    color: white;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    background: #00868A
+    
+}
+.blok2{
+    position: absolute;
+    width: 1296px;
+    height: 476px;
+    left: 312px;
+    top: 936px;
+}
+h2{
+    position: absolute;
+    width: 705px;
+    height: 72px;
+    left: 607px;
+    top: 936px;
+
+    font-family: 'ABeeZee';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 150%;
+    text-align: center;
+    color: #00868A;
+
+}
+
+#os{
+    width: 306px;
+    height: 234px;
+    margin-top: 0;
+    margin-left: 0;
+
+}
+
+.forHome,.oborud, .decor, .promsh, p{
+    
+    width: 182px;
+    height: 64px;
+    margin-left: 24px;
+    margin-top:  13px;
+    font-size: 21px;
+    line-height: 150%;
+    color: white;
+}
+
+
+.forHome, .oborud, .decor, .promsh{
+    position: absolute;
+    width: 306px;
+    height: 344px;
+    left: 312px;
+    top: 1068px;
+    background: #00868A;
+}
+
+
+.oborud{
+    left: 642px;
+}
+.decor{
+    left: 972px;
+}
+.promsh{
+    left: 1302px;
+}
+#butt{
+    
+    position: absolute;
+    width: 50px;
+    height: 40px;
+    margin-left: 240px; 
+    margin-top: -50px;
+    
+}
+
+.lastLine{
+    position: absolute;
+    width: 1295px;
+    height: 91px;
+    margin-left:  -700px;
+    margin-top:  140px;
+
+}
+.lastLine, #vkl, #youtubel, #facebookl, #instagraml{
+    position: absolute;
+    width: 24px;
+    height: 24px;
+     margin-left:10px; 
+    
+}
+#youtubel{
+    margin-left: 100px;
+}
+
+#facebookl{
+    margin-left: 180px;
+}
+#instagraml{
+    margin-left: 260px;
+}

@@ -1,0 +1,110 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+ }
+
+.user-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 3px solid green;
+  }
+  
+.user {
+    margin-bottom: 10px;
+    background-color: azure;
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+  }
+  
+  .user p {
+    margin: 5px 0;
+  }
+  
+  .posts .item {
+    background-color: #fffbfb;
+    border: 1px solid #bcb8b8; 
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+  }
+  
+  .posts .item p {
+    margin: 5px 0;
+  }
+
+  .item {
+    position: relative;
+  }
+
+
+  .delButton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    width: 60px;
+  }
+
+.back, .next{
+    position: absolute;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    font-size: 150%;
+  }
+.next{
+  right: 20%;
+}
+.back{
+  left: 20%;
+}
+
+@media screen and (max-width:768px) {
+  .next{
+    right: 10%;
+  }
+  .back{
+    left: 10%;
+  }
+} 
+@media screen and (max-width: 450px) {
+  .back, .next{
+    width: 20px;
+    height: 20px;
+    font-size: 100%;
+    border: none;
+  }
+  .next{
+    right: 5%;
+  }
+  .back{
+    left: 5%;
+  }
+  .delButton{
+    position: relative;
+    
+    border-radius: 5px;
+    font-size: 10px;
+    width: 50px;
+    bottom: 0px;
+    left: 5px;
+  }
+} 
+  
+  
+
+
+  
+  
+  
+  

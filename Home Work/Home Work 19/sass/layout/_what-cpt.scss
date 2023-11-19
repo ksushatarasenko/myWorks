@@ -1,0 +1,86 @@
+.what-is-gpt {
+    max-width: 1176px;
+    margin: $centr;
+    background-color: $blue-bg;
+    margin: 0 auto;
+
+    
+    &__wraper {  // внутренний второй общий контейнер
+        margin: 40px 60px;
+        padding: 3% 0 3% 0;
+        @include x-small{
+              margin: 2%;  
+        }
+        @include small-screen {
+            margin: 4%;
+        }
+        &__title { //  контейнер для верхнего абзаца и лого
+            display: grid;
+            grid-template-columns: 151px 734px;
+            justify-content: space-between;
+            margin-bottom: 91px;
+            @include medium-screen {
+                grid-template-columns:1fr;
+            }
+
+        }
+            
+
+        #text-top {
+            height: 100%;
+            overflow: auto;
+            margin: 17px 9px 0 0;   
+        }
+        
+
+        h4 {
+            color: #FFF;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 800;
+            line-height: 75px; 
+            letter-spacing: -0.96px;
+        }
+        .chatgpt {
+            width: 151px;
+            height: 75px; 
+            margin-left: 6px;
+            margin-top: 5%;       
+                h4 {
+                    margin-top: -15px;                
+                }           
+            }
+        
+        
+        #text-title {
+            width: 50%;
+            overflow: auto;
+            @include small-screen {
+                width: 100%;
+                margin-bottom: 15%;
+            }   
+        }
+        .contaner-menu-gpt {
+            margin-top: 97px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            align-items: flex-end;
+            @include x-small{
+                grid-template-columns: 1fr;
+                margin: 0 10%;
+            }
+            .chatbots,
+            .knowledgebase,
+            .education {
+                height: 100%;
+                p {
+                    margin-top: 26px;
+                }
+            } 
+        }
+    }
+}
+
+    
+   

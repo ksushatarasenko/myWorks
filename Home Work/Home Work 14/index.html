@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поиск фотографий с помощью NASA API</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header>
+    <h1>My works - 14</h1>
+    <div class="list">
+        <a href="../../index.html">Home</a>
+    </div>
+  </header>
+  <h2 id="zagolovok">ФОТО КАМЕРЫ ВЕЗДЕХОДА НА МАРСЕ</h2>
+  <select id="cameraSelect" >
+    <option value="">Выберите камеру</option>
+    <option value="FHAZ">ПЕРЕДНЯЯ КАМЕРА</option>
+    <option value="RHAZ">ЗАДНЯЯ КАМЕРА</option>
+    <option value="MAST">КАМЕРА МАЧТА</option>
+    <option value="CHEMCAM">ХИМИКО-КАМЕРНЫЙ КОМПЛЕКС</option>
+    <option value="MAHLI">MAHLI</option>
+    <option value="NAVCAM">НАВИГАЦИОННАЯ КАМЕРА</option>
+  </select>
+  <button id="search">Найти фотографии</button>
+  <div id="photosContainer"></div>
+  <button id="scrollButton" onclick="scrollToTop()">НАВЕРХ</button>
+
+  
+    <script src="./script.js"></script>
+</body>
+</html>

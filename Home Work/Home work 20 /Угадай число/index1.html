@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <section class="container">
+        
+        <section class="guess-the-number">
+            <button id="home"><a href="../index.html">HOME</a></button>
+            <section class="guess-the-number__header">
+                <h2>ИГРА</h2>
+                <h1>УГАДАЙ ЧИСЛО</h1>
+                <p>Попробуйте угадать задуманое число компьютером от 0 до 100, для этого введите ваше число в поле и нажмите  "Отправить". У вас есть 5 попыток. Желаем удачи !!! </p>
+            </section>
+    
+       
+            <section class="guess-the-number__play">
+                <form >
+                    <input type="number" id="guessInput" min="0" max="100" required placeholder="введите ваше число"> 
+                    <button>Отправить</button>
+          
+                </form>
+                <button id="reset"> Reset</button>
+            </section>
+    
+            <section class="guess-the-number__result">
+                <h1 id="result"></h1>
+            </section>
+        </section>
+
+        <audio id="uspech" src="../audio/uspeshno-proyden-uroven.mp3"></audio>
+        <audio id="error" src="../audio/uvedomlenie-ob-oshibke.mp3"></audio>
+
+
+        <script src="./script.js"></script>
+        
+</body>
+</html>

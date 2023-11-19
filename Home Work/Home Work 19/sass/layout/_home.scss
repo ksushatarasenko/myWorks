@@ -1,0 +1,77 @@
+.main-content {
+    margin-bottom: 78px;
+    max-width: 1169px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    @include medium-screen {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    &__text {
+        @include medium-screen {
+            order: 2;
+        }
+        .gradient-heading {
+            background-image:$gradient;
+            -webkit-background-clip: text; /* Для браузеров на основе WebKit */
+            -moz-background-clip: text; /* Для браузеров на основе Mozilla */
+            background-clip: text;
+            color: transparent;
+            font-size: 62px;
+            font-weight: 800;
+            line-height: 75px;
+            letter-spacing: -2.48px;
+            width: 612px;  
+            margin-top: 155px;  
+            margin-bottom: 33px;
+            @include medium-screen {
+                font-size: 42px;
+            }
+            @include small-screen {
+                font-size: 35px;
+                width: 100%;
+            }
+          }
+          .text-p{
+            font-size: 20px;
+            width: 97%;
+            margin: 20px 0;
+
+          }
+        form {
+            margin-top: 36px;
+            margin-bottom: 37px;
+            display: flex;
+            input {
+                background-color: $header-input;
+                border: none;
+                outline: none;
+                color: #3d6184;
+                padding: 20px;
+                border-radius: 5px 0 0 5px;
+                width: 70%;
+            }
+            .btn {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+        .people {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            &__text {
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: $nav-link;
+                }
+                
+            }
+        }
+        
+    }
+    &__img {
+        img {width: 100%;}
+    }
+
+}

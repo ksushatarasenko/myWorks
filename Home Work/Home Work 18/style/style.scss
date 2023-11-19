@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "_variables";
+@import "_mixins";
+@import "_header";
+@import "_section2-3";
+@import "_section4-5-6";
+@import "_footer";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.landing {
+    margin: 0 auto;
+    font-family: $text-Lato;
+    margin-bottom: 5%;
+    padding: 0 15px;
+    color: $blue-color;
+    
+    @include x-large {
+        max-width: 1400px;
+    }
+    @include large {
+        max-width: 1198px;
+    }
+    @include big-screen {
+        max-width: 958px;
+    }
+    @include medium-screen {
+        max-width: 758px;
+    }
+    @include small-screen {
+        max-width: 468px;
+        padding: 20px;
+    }
+    @include x-small {
+        max-width: 100%;
+        padding: 15px;
+    }
+    }
+    
+    
+
+        

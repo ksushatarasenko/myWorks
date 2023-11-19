@@ -1,0 +1,154 @@
+//  ------------- 2 SHOP BY JEWELRY-----------
+.modul2-shop {
+    @include flexible();  
+    &__wrapper-modul2{
+        width: 1245px;
+        height: 379px;
+        margin-bottom: 5%;
+        @include large {
+            height: 100%;
+        }
+        &__images {
+            display: grid;
+            grid-template-columns: repeat(5, 234px);
+            gap: 20px;
+            @include large {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 1fr 1fr;
+                text-align: center
+            }
+            @include medium-screen {
+                grid-template-columns: 1fr
+            }
+            figure{
+                @include filling();
+                figcaption {
+                text-align: center;
+                font-size: 18px;
+                @include indent-from-image;
+                figcaption{
+                    font-weight: lighter;
+                }
+                }
+            }       
+        }    
+        &__title {            
+            @include title;
+            @include indent-from-text-title;
+            @include large {
+                 @include flexible;
+            }
+            @include small-screen {
+                text-align: center;
+            }
+        }
+    }
+    
+}
+//--------- 3 HAND CRAFTED FINE PIECES--------
+.modul3-hand-crafted {
+    width: 100%;
+    height: 682px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    
+    @include big-screen {     
+      max-width: max-content;
+      grid-template-columns: 600px;
+      grid-template-rows: 1fr 1fr;
+      height: 100%;
+      margin: 0 auto;
+    }
+    @include medium-screen {
+      grid-template-columns: 480px;
+      grid-template-rows: 1fr 1fr;
+    }
+    @include small-screen {
+      grid-template-columns: 320px;
+      grid-template-rows: 1fr 1fr;
+    }
+    @include x-small {
+      grid-template-columns: 280px;
+      grid-template-rows: 1fr 1fr;
+    }
+  
+    &__title-container {
+      background-color: $blue-color;
+      color: white;
+      max-height: 100%;
+      @include filling();
+  
+      .modul3-hand-crafted__title {
+        width: 554px;
+        height: 344px;
+        margin-top: 20%;
+        margin-left:  15%;
+        @include large {
+          width: 80%;
+          margin-top: 20% 0 0 20%;
+        }
+        @include big-screen {
+          margin: 10% 15%;
+        }
+        @include medium-screen {
+          margin-left: 0 0 15% 30%;
+        }
+  
+        h2 {
+          font-size: 54px;
+          @include medium-screen {
+            font-size: 38px;
+          }
+          @include big-screen {
+            font-size: 34px;
+          }
+          @include small-screen {
+            font-size: 28px;
+          }
+        }
+  
+        p {
+          margin: 25px 0;
+          line-height: 1.3;
+          font-size: 28px;
+          width: 90%;
+          word-break: break-word;
+          @include x-large {
+            font-size: 24px;
+          }
+          @include large {
+            font-size: 30px;
+            margin: 10% 0 15% 0;
+          }
+          @include medium-screen{
+            font-size: 24px;
+            line-height: 1.5;
+            word-break: break-word;
+            margin: 5% 0 5% 0
+          }
+          @include small-screen {
+            font-size: 18px
+          }
+        }
+  
+        button {
+          @include white_button();
+          @include medium-screen {
+            margin-top: 8%;
+          }
+        }
+      }
+    }
+  
+    &__img {
+      @include large {
+        width: 100%;
+        margin: 0px;
+      }
+      img {
+        @include filling();
+        
+      }
+    }
+  }
+  

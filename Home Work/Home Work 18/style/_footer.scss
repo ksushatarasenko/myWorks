@@ -1,0 +1,125 @@
+// ---------------------------- footer -----------------
+.footer-wraper{
+    background-color: #B8E0EF;
+    height: auto;
+    .footer-section7__glavnoe{
+        width: 944px;          
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: calc(50% - 944px/2);
+        padding-top: 60px;
+
+        @include big-screen {
+            margin-left: 0;
+            width: 100%;
+            p {
+                overflow-wrap: break-word;
+            }
+        }
+        @include small-screen{
+            grid-template-columns: 280px;
+            justify-content: center;
+            grid-template-rows: 1fr 1fr;
+            .section7-left, .section7-right {
+                max-width: 100%;
+            }
+        }
+    
+        .section7-right{
+            background-color: white;
+            height: 100%;
+            @include flexible();
+            @include filling();
+            
+            &__info{
+                width: 362px;
+                text-align: center;
+                h3{
+                    @include title();
+                    margin: 10px auto;
+                }
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    font-size: 16px;
+                    line-height: 22px;
+                    margin: 10px auto;
+                    color: #343434;
+                   
+                }
+
+                button{
+                    @include blue_button();
+                    background-size: cover;
+                    margin: 10px auto;
+                }
+            }
+           
+        }
+        .section7-left {
+            img {
+                @include filling();                 
+            }
+        }        
+    }
+
+    .footer-menu{
+        display: grid;
+        grid-template-columns: repeat(3, 230px) ;
+        margin: $margin-left;
+        
+        @include big-screen {
+            grid-template-columns: repeat(3, 1fr); 
+            width: 100%;
+            margin: 20px 5px;
+        }
+        @include small-screen{
+            grid-template-columns: 1fr;
+            justify-self: center;
+        }
+        &__product, &__resouces, &__company {
+            justify-self: center;
+            h4{
+                font-size: 21px;
+                color:  #343434;
+                margin: 15px 0 15px 0;
+            }
+            a{
+                color:$color-foot-menu;
+                font-size: 16px;
+                line-height: 32px;
+                text-decoration: none;
+            }
+        }
+        
+    }
+    .line{       
+        border: 1px solid rgba(146, 159, 168, 0.35);
+        margin-bottom: 0px;
+    }
+    .footer-down{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+        margin: 0 4% 0 8%;
+        &__social-media{
+            width: 220px;
+            display: grid;
+            grid-template-columns: repeat(4, 4fr);
+            gap: 10px;
+            img{
+                width: 32px;
+                height: 32px;
+            }
+        }
+        @include small-screen{
+            display: grid;
+            grid-template-columns: 1fr;
+            &__social-media {
+                order: -1;
+            }
+        }
+    }
+
+}
+
