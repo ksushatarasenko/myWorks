@@ -1,0 +1,15 @@
+.text-container {
+    display: flex;
+}
+
+.selected{
+    display: none;
+}
+
+/* .ru {
+    display: none;
+} 
+
+.en {
+    display: block;
+} */
