@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -5,144 +7,120 @@
     font-family: 'ABeeZee', sans-serif;
     font-style: italic;
 }
-.conteiner{
+.wrapper{
     position: relative;
-    width: 1920px;
-    height: 1662px;
+    max-width: 1920px;
     background:#FFFFFF;
-    display: flex;
+    margin: 0 auto;
 }
 
+.main{
+    max-width: 1296px;
+    margin: 0 auto;
+}
+/* ===== header ========= */
 .topLine{
-    width: 1296px;
-    height: 90px;
-    left: 312px;
-    top: 0;
-    position: absolute;
-
     display: flex;
-    flex-direction: row;
+    height: 90px;
+    justify-content: space-between;
     align-items: center;
-    padding: 0;
-    
+    margin: 0 auto; 
+    padding: 2%;
 }
 #lamp{
     width: 74px;
     height: 74px;
-    box-sizing: border-box;
-    margin-left: 125px;
-    margin-top: 8px;
-    flex: none;
-    
+}
+.icon{
+    height: 24px;  
+    display: flex;
+    gap: 30px;
+}
+.icon img{
+    width: 24px;
+    cursor: pointer;
+}
+ button{
+    cursor: pointer;
+ }
+/* ======= end header ============ */
+
+/* ====== block 1 ================ */
+.block1{
+    max-width: 1923px;
+    height: 701px;
+    top: 90px;
+    background: #4FBFA5;
+    padding: 1%;
 }
 
-.table{
-    position: absolute;
-    width: 1250px;
-    height: 29px;
-    margin-left: 100px;
-    margin-top: 30px;
+.header_block1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+.menu-list{
+    display: flex;
+    gap: 10%;
     color: white;
     font-size: 18px;
-    text-align: center;
-    
-   
+}
+.menu-list li {
+    list-style-type: none;
+    cursor: pointer;
 }
 
 #contact{
-    position: absolute;
-    margin-top: 30px;
-    margin-left: 1400px;
     width: 194px;
-    height: 42px;  
-    font-size: 18px; 
-   
-
+    height: 42;
+    padding: 10px;
+    background-color: FFFFFF;
 }
-.icon{
-    width: 24px;
-    height: 24px;
-    margin-top: 16px;
+.block1_body{
     display: flex;
-    flex-direction: row;
-    position: absolute;
-  
-}
-#vk{
-    margin-left: 626px;
-    
-}
-#youtube{
-    margin-left: 130px;
-}
-#facebook{
-    margin-left: 130px;
-}
-#instagram{
-    margin-left: 130px;
-}
-.block1{
-    position: relative;
-    width: 1923px;
+    max-width: 1923px;
     height: 701px;
-    left: -3px;
-    top: 90px;
-    background: #4FBFA5;
+    justify-content: space-between;
 }
-.glavnay{
-    position: absolute;
-    width: 746px;
-    height: 533px;
-    left: 862px;
-    top: 115px;
+
+.title{
+    width: 416px;
+    height: 266px;
+    font-size: 21px;
+    line-height: 150%;
+    color: white;
+    padding-top: 185px;
 }
-h1{
+.title_p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.h1{
+    font-family: 'ABeeZee';
+    font-style: italic;
     font-weight: 400;
     font-size: 48px;
     line-height: 150%;
-    color: #FFFFFF;
-    position: absolute;
-    width: 300px;
-    height: 70px;
-    margin-left: 150px;
-    top: 200px;
-
 }
-.paraGlav{
-    color: #FFFFFF;
-    width: 580px;
-    height: 84px;
-    margin-left: 150px;
-    margin-top: 320px;
+.block_1_img{
+    margin-top: 50px;
+    width: 100%;
+    
 }
-#podrob{
-    position: absolute;
-    width: 158px;
-    height: 50px;
-    margin-left: 150px;
-    top: 549px;
+.btn_block_1{
     font-size: 18px;
     color: white;
     line-height: 21px;
     letter-spacing: 0.05em;
+    background: #00868A;
     text-transform: uppercase;
-    background: #00868A
-    
+    padding: 15px 25px;
 }
-.blok2{
-    position: absolute;
-    width: 1296px;
-    height: 476px;
-    left: 312px;
-    top: 936px;
-}
-h2{
-    position: absolute;
-    width: 705px;
-    height: 72px;
-    left: 607px;
-    top: 936px;
 
+/* ====== block2 ========= */
+
+h2{
     font-family: 'ABeeZee';
     font-style: italic;
     font-weight: 400;
@@ -150,80 +128,68 @@ h2{
     line-height: 150%;
     text-align: center;
     color: #00868A;
-
+    margin-top: 146px;
+    margin-bottom: 60px;
+}
+.items{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 #os{
-    width: 306px;
+    width: 100%;
     height: 234px;
-    margin-top: 0;
-    margin-left: 0;
-
 }
-
-.forHome,.oborud, .decor, .promsh, p{
-    
-    width: 182px;
-    height: 64px;
-    margin-left: 24px;
-    margin-top:  13px;
-    font-size: 21px;
-    line-height: 150%;
-    color: white;
-}
-
-
-.forHome, .oborud, .decor, .promsh{
-    position: absolute;
+.item1{
     width: 306px;
-    height: 344px;
-    left: 312px;
-    top: 1068px;
-    background: #00868A;
-}
-
-
-.oborud{
-    left: 642px;
-}
-.decor{
-    left: 972px;
-}
-.promsh{
-    left: 1302px;
+    display: flex;
+    flex-direction: column;
 }
 #butt{
-    
-    position: absolute;
     width: 50px;
     height: 40px;
-    margin-left: 240px; 
-    margin-top: -50px;
+    cursor: pointer;
+}
+.item_title{
+    background-color: #00868A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 0;
+}
+.item_title p{
+    color: white;
+    width: 30%;
+}
+/* ===== footer ============ */
+
+.footer{
+    margin-top: 128px;
+    margin-bottom: 64px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 56px;
+}
+
+.footer img{
+    cursor: pointer;
+}
+
+@media(max-width: 1240px){
+    .items{
+        padding: 2%;
+        display: grid;
+        grid-template-columns: 320px 320px;
+        gap: 2%;
+        justify-content: center;
+    }
     
 }
-
-.lastLine{
-    position: absolute;
-    width: 1295px;
-    height: 91px;
-    margin-left:  -700px;
-    margin-top:  140px;
-
-}
-.lastLine, #vkl, #youtubel, #facebookl, #instagraml{
-    position: absolute;
-    width: 24px;
-    height: 24px;
-     margin-left:10px; 
-    
-}
-#youtubel{
-    margin-left: 100px;
-}
-
-#facebookl{
-    margin-left: 180px;
-}
-#instagraml{
-    margin-left: 260px;
+@media(max-width: 1065px){
+    .btn_block_1_img{
+       width: 500px;
+       height: 250px;
+    }
 }
