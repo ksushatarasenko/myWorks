@@ -26,8 +26,7 @@
     /* position: relative; */
 }
 .resume{
-    position: absolute!important;
-    /* left: 100px */
+    margin-top: 5%;
 }
 /* ======== HEADER ======= */
 .header{
@@ -56,11 +55,11 @@
 
 /* TITLE */
     .title{
-        max-width: 80%;
+        max-width: 60%;
         position: relative;
         font-size: 28px;
         text-align: center;
-
+        margin: 0 auto;
     }
 
 /* UL -LI */
