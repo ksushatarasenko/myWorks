@@ -7,7 +7,7 @@
 }
 .wrapper{
     max-width: 100wh;
-    height: 100vh;
+    height: auto;
     margin: 0 auto;
     background-image: url('./image/fon4.jpg');
     background-size: cover;
